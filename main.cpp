@@ -6,6 +6,8 @@
 // code is executed in order top to bottom 
 int main(){
     std:: cout << "Hello World!" << std:: endl;
+    std:: cout << "Number 1";
+    std:: cout << "Number 2";
 
-    return 0; 
+   return 0; 
 }

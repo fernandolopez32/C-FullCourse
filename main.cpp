@@ -12,6 +12,7 @@ int main(){
             // std:: cout << "Number 2" << std:: endl;
     // printing out my name 10 times 
     for(int i = 0; i < 10; i++){
+                        // this is how you put a variable in a terminal log
         std:: cout << "Fernando Lopez" << std:: endl;
     }
     

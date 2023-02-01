@@ -19,6 +19,11 @@ int main(){
             // }
     // functions are writen out the same as java 
     
+    //store the sum in a variable and print out that variables vallue
+
+    double sum = addingDecimals(3.14, 3.43);
+
+    std::cout << "First sum : " << sum << std::endl;
 
     std::cout << "The sum of these decimals is : " << addingDecimals(2.3,4.1)<< std::endl;
 

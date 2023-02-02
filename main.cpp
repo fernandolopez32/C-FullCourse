@@ -21,11 +21,16 @@ int main(){
     
     //store the sum in a variable and print out that variables vallue
 
-    double sum = addingDecimals(3.14, 3.43);
+            // double sum = addingDecimals(3.14, 3.43);
 
-    std::cout << "First sum : " << sum << std::endl;
+            // std::cout << "First sum : " << sum << std::endl;
 
-    std::cout << "The sum of these decimals is : " << addingDecimals(2.3,4.1)<< std::endl;
+            // std::cout << "The sum of these decimals is : " << addingDecimals(2.3,4.1)<< std::endl;
+
+    // this is how you write an array 
+    int myArray[5] = {1,2,3,4,5};
+    std::cout << "this is array at index number two: " << myArray[2]<< std::endl;
+
 
     // sometimes used to see if the whole program ran correctly
    return 0; 

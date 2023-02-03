@@ -55,16 +55,15 @@ int main(){
 // write a application in the terminal to have a conversation with.
     string userResp = "";
 
-    // do 
-    // {
-    //     std:: cout << "hey looser" << std::endl;
-    // }
-    // while (/* condition */)
-    // {
-    //     /* code */
-    // };
+    do 
+    {
+        std:: cout << "hey looser" << std::endl;
+        cin >> userResp;
+    }
+    while (userResp != "bye");
+    
 
 
-    // sometimes used to see if the whole program ran correctly
+// sometimes used to see if the whole program ran correctly
    return 0; 
 }

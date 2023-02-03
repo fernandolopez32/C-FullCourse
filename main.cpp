@@ -53,14 +53,14 @@ int main(){
 
 
 // write a application in the terminal to have a conversation with.
-    string userResp = "";
+            string userResp = "";
 
-    do 
-    {
-        std:: cout << "hey looser" << std::endl;
-        cin >> userResp;
-    }
-    while (userResp != "bye");
+            do 
+            {
+                std:: cout << "hey looser" << std::endl;
+                getline(cin,userResp);
+            }
+            while (userResp != "bye");
     
 
 

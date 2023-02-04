@@ -12,7 +12,7 @@ If you are reading you need to know the comment structure--->
 
 
 
-
+// standard libs 
 #include <iostream>
 // loading libs that we can use for example function to print out hello world
 #include <string>

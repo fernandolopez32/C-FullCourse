@@ -61,7 +61,7 @@ int main(){
             do 
             {
                  std:: cout << "hey looser" << std::endl;
-                 std:: cin >> userResp;
+                 getline (cin, userResp);
                  cout << userResp <<  endl;
             }
             while (userResp != "bye");

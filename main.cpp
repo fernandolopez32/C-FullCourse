@@ -17,6 +17,8 @@ If you are reading you need to know the comment structure--->
 // loading libs that we can use for example function to print out hello world
 #include <string>
 
+#include <string_view>
+
 
 using namespace std;
 
@@ -54,13 +56,13 @@ int main(){
 
 // auto asigner 
 
-auto character = 'a';
+            // auto character = 'a';
 
-auto integer = 2;
+            // auto integer = 2;
 
-auto decimalNumber = 2.3;
+            // auto decimalNumber = 2.3;
 
-auto words = "a string of words";
+            // auto words = "a string of words";
 
 
 
@@ -71,8 +73,17 @@ auto words = "a string of words";
 
             do 
             {
-                 std:: cout << "hey looser" << std::endl;
+                 std:: cout << "Ask me a question bro... " << std::endl;
+                 
+                 
                  getline (cin, userResp);
+
+                 if(userResp == "How are you?")
+                 {
+                    cout << "What?" << endl;
+                 }
+                 
+                 
                  cout << userResp <<  endl;
             }
             while (userResp != "bye");

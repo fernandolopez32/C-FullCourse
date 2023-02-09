@@ -67,26 +67,35 @@ int main(){
 
 
 // write a application in the terminal to have a conversation with.
-            string userResp;
+           std:: string userResp;
 
-            
+            do{
+                std::cout << "and...?" << std::endl;
+                std::getline(std::cin, userResp);
 
-            do 
-            {
-                 std:: cout << "Ask me a question bro... " << std::endl;
-                 
-                 
-                 getline (cin, userResp);
+                std::cout << userResp + "is what you said. " << std::endl;
 
-                 if(userResp == "How are you?")
-                 {
-                    cout << "What?" << endl;
-                 }
-                 
-                 
-                 cout << userResp <<  endl;
             }
             while (userResp != "bye");
+            
+            
+
+            // do 
+            // {
+            //      std:: cout << "Ask me a question bro... " << std::endl;
+                 
+                 
+            //      std::getline(std::cin, userResp);
+
+            //      if(userResp == "How are you?")
+            //      {
+            //         cout << "What?" << endl;
+            //      }
+                 
+                 
+            //      cout << userResp <<  endl;
+            // }
+            // while (userResp != "bye");
     
 
 

@@ -52,6 +52,18 @@ int main(){
             // std::cout << "this is array at index number two: " << myArray[2]<< std::endl;
 
 
+// auto asigner 
+
+auto character = 'a';
+
+auto integer = 2;
+
+auto decimalNumber = 2.3;
+
+auto words = "a string of words";
+
+
+
 // write a application in the terminal to have a conversation with.
             string userResp;
 

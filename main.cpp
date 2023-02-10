@@ -65,22 +65,39 @@ int main(){
             // auto words = "a string of words";
 
 
+//pointers
+    
+    // zeo means NULL you cannot read or write to this pointer
+    void* ptr = 0;
+
+    int var = 8; 
+    void* ptr = &var;
+    std::cin.get();
+
+// unsignee int value 
+// allocating the memory for negative and positive numbers
+
+    unsigned int value4 {4};
+
+
 
 // write a application in the terminal to have a conversation with.
-           std:: string userResp;
+           std:: string* userResp;
 
             do{
                 std::cout << "Start..." << std::endl;
                 // this line bellow gets the input of the line in the terminal and stores it in the variable called userResp
-                std::getline(std::cin, userResp);
+                std::getline(std::cin, *userResp);
 
-                if(userResp.ends_with("?")){
-                    std::cout << "what? " << std::endl;
+                if(userResp){
+                    std::cout << userResp << std::endl;
                 }
-                std::cout << userResp + " is what you said. " << std::endl;
+
+                
+                std::cout << *userResp + " is what you said. " << std::endl;
 
             }
-            while (userResp != "bye");
+            while (*userResp != "bye");
             
             
 

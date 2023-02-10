@@ -97,6 +97,12 @@ if(greenLight){
 }
 
 
+// char is for single letters 
+
+    char char1 = 'a';
+        cout << char1 << endl;
+
+
 
 
 

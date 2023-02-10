@@ -90,7 +90,11 @@ if(redLight == true){
     std::cout<< "GO!" << std:: endl;
 }
 
-
+if(greenLight){
+    cout << "the light is green" << endl;
+}else{
+    cout <<"the light is not green" << endl;
+}
 
 
 

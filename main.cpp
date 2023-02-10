@@ -79,6 +79,35 @@ int main(){
 
     unsigned int value4 {4};
 
+// booleans in c++ 
+
+bool redLight {true};
+bool greenLight{false};
+
+if(redLight == true){
+    std::cout<<"Stop!!"<< std:: endl;
+}else{
+    std::cout<< "GO!" << std:: endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // write a application in the terminal to have a conversation with.

@@ -70,10 +70,14 @@ int main(){
            std:: string userResp;
 
             do{
-                std::cout << "and...?" << std::endl;
+                std::cout << "Start..." << std::endl;
+                // this line bellow gets the input of the line in the terminal and stores it in the variable called userResp
                 std::getline(std::cin, userResp);
 
-                std::cout << userResp + "is what you said. " << std::endl;
+                if(userResp.ends_with("?")){
+                    std::cout << "what? " << std::endl;
+                }
+                std::cout << userResp + " is what you said. " << std::endl;
 
             }
             while (userResp != "bye");

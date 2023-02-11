@@ -81,31 +81,31 @@ int main(){
 
 // booleans in c++ 
 
-bool redLight ={true};
-bool greenLight ={false};
+            // bool redLight ={true};
+            // bool greenLight ={false};
 
-if(redLight == true){
-    std::cout<<"Stop!!"<< std:: endl;
-}else{
-    std::cout<< "GO!" << std:: endl;
-}
+            // if(redLight == true){
+            //     std::cout<<"Stop!!"<< std:: endl;
+            // }else{
+            //     std::cout<< "GO!" << std:: endl;
+            // }
 
-if(greenLight){
-    cout << "the light is green" << endl;
-}else{
-    cout <<"the light is not green" << endl;
-}
+            // if(greenLight){
+            //     cout << "the light is green" << endl;
+            // }else{
+            //     cout <<"the light is not green" << endl;
+            // }
 
 // char is for single letters 
 
-//     char char1 = 'a';
-//         cout << char1 << endl;
+            // char char1 = 'a';
+            //     cout << char1 << endl;
 
 // // asign ASCII code to a variable
 
-//     char value = 65; // ASCII character code for A
-//     cout << "value : " << value << endl;
-//     cout << "value(int) : " << static_cast<int>(value) << endl;
+            char value = 65; // ASCII character code for A
+            cout << "value : " << value << endl;
+            cout << "value(int) : " << static_cast<int>(value) << endl;
 
 
 

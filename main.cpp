@@ -102,7 +102,11 @@ if(greenLight){
     char char1 = 'a';
         cout << char1 << endl;
 
+// asign ASCII code to a variable
 
+    char value = 65; // ASCII character code for A
+    cout << "value : " << value << endl;
+    cout << "value(int) : " << static_cast<int>(value) << endl;
 
 
 

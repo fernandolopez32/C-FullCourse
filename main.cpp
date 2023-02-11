@@ -103,11 +103,22 @@ int main(){
 
 // // asign ASCII code to a variable
 
-            char value = 65; // ASCII character code for A
-            cout << "value : " << value << endl;
-            cout << "value(int) : " << static_cast<int>(value) << endl;
+            // char value = 65; // ASCII character code for A
+            // cout << "value : " << value << endl;
+            // cout << "value(int) : " << static_cast<int>(value) << endl;
 
 
+
+// value incrementation and decremantation 
+
+            int val = 5; 
+            cout << val++ << endl;
+            cout << val << endl;
+
+            cout << val-- << endl;
+            cout << val << endl; 
+
+            
 
 
 

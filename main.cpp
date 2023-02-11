@@ -68,21 +68,21 @@ int main(){
 //pointers
     
     // zeo means NULL you cannot read or write to this pointer
-    void* ptr = 0;
+    // void* ptr = 0;
 
-    int var = 8; 
-    void* ptr = &var;
-    std::cin.get();
+    // int var = 8; 
+    // void* ptr = &var;
+    // std::cin.get();
 
 // unsignee int value 
 // allocating the memory for negative and positive numbers
 
-    unsigned int value4 {4};
+    // unsigned int value4 {4};
 
 // booleans in c++ 
 
-bool redLight {true};
-bool greenLight{false};
+bool redLight ={true};
+bool greenLight ={false};
 
 if(redLight == true){
     std::cout<<"Stop!!"<< std:: endl;
@@ -96,17 +96,16 @@ if(greenLight){
     cout <<"the light is not green" << endl;
 }
 
-
 // char is for single letters 
 
-    char char1 = 'a';
-        cout << char1 << endl;
+//     char char1 = 'a';
+//         cout << char1 << endl;
 
-// asign ASCII code to a variable
+// // asign ASCII code to a variable
 
-    char value = 65; // ASCII character code for A
-    cout << "value : " << value << endl;
-    cout << "value(int) : " << static_cast<int>(value) << endl;
+//     char value = 65; // ASCII character code for A
+//     cout << "value : " << value << endl;
+//     cout << "value(int) : " << static_cast<int>(value) << endl;
 
 
 
@@ -127,20 +126,20 @@ if(greenLight){
 // write a application in the terminal to have a conversation with.
            std:: string* userResp;
 
-            do{
-                std::cout << "Start..." << std::endl;
-                // this line bellow gets the input of the line in the terminal and stores it in the variable called userResp
-                std::getline(std::cin, *userResp);
+            // do{
+            //     std::cout << "Start..." << std::endl;
+            //     // this line bellow gets the input of the line in the terminal and stores it in the variable called userResp
+            //     std::getline(std::cin, *userResp);
 
-                if(userResp){
-                    std::cout << userResp << std::endl;
-                }
+            //     if(userResp){
+            //         std::cout << userResp << std::endl;
+            //     }
 
                 
-                std::cout << *userResp + " is what you said. " << std::endl;
+            //     std::cout << *userResp + " is what you said. " << std::endl;
 
-            }
-            while (*userResp != "bye");
+            // }
+            // while (*userResp != "bye");
             
             
 

@@ -111,27 +111,35 @@ int main(){
 
 // value incrementation and decremantation via suffix implementation
 
-            int val = 5; 
-            cout << val++ << endl;
-            cout << val << endl;
+            // int val = 5; 
+            // cout << val++ << endl;
+            // cout << val << endl;
 
-            cout << val-- << endl;
-            cout << val << endl; 
+            // cout << val-- << endl;
+            // cout << val << endl; 
 
 // preffix value incrementation and decremantation
 
 
-            int val1 = 5;
+            // int val1 = 5;
 
-            ++val1;
-            cout<< val1 << endl;
+            // ++val1;
+            // cout<< val1 << endl;
 
-            cout << --val1 << endl; 
+            // cout << --val1 << endl; 
 
+    // compound asignment operators 
 
-
-
-
+    int val = 32;
+    cout<< val << endl;
+    val +=5; 
+    cout<< val <<endl;
+    val-=5;
+    cout<< val <<endl;
+    val *=5;
+    cout<< val <<endl;
+    val/=5;
+    cout<< val <<endl;
 
 
 

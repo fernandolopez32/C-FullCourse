@@ -109,7 +109,7 @@ int main(){
 
 
 
-// value incrementation and decremantation 
+// value incrementation and decremantation via suffix implementation
 
             int val = 5; 
             cout << val++ << endl;
@@ -118,7 +118,17 @@ int main(){
             cout << val-- << endl;
             cout << val << endl; 
 
-            
+// preffix value incrementation and decremantation
+
+
+            int val1 = 5;
+
+            ++val1;
+            cout<< val1 << endl;
+
+            cout << --val1 << endl; 
+
+
 
 
 

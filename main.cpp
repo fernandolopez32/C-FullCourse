@@ -19,6 +19,8 @@ If you are reading you need to know the comment structure--->
 
 #include <string_view>
 
+#include <cmath>
+
 
 using namespace std;
 
@@ -67,17 +69,17 @@ int main(){
 
 //pointers
     
-    // zeo means NULL you cannot read or write to this pointer
-    // void* ptr = 0;
+// zeo means NULL you cannot read or write to this pointer
+            // void* ptr = 0;
 
-    // int var = 8; 
-    // void* ptr = &var;
-    // std::cin.get();
+            // int var = 8; 
+            // void* ptr = &var;
+            // std::cin.get();
 
 // unsignee int value 
 // allocating the memory for negative and positive numbers
 
-    // unsigned int value4 {4};
+            // unsigned int value4 {4};
 
 // booleans in c++ 
 
@@ -130,20 +132,24 @@ int main(){
 
     // compound asignment operators 
 
-    int val = 32;
-    cout<< val << endl;
-    val +=5; 
-    cout<< val <<endl;
-    val-=5;
-    cout<< val <<endl;
-    val *=5;
-    cout<< val <<endl;
-    val/=5;
-    cout<< val <<endl;
+            // int val = 32;
+            // cout<< val << endl;
+            // val +=5; 
+            // cout<< val <<endl;
+            // val-=5;
+            // cout<< val <<endl;
+            // val *=5;
+            // cout<< val <<endl;
+            // val/=5;
+            // cout<< val <<endl;
 
 
+// math functions (NOW INCLUDING <CMATH>)
 
-
+            int  neg = -3000;
+            cout << abs(neg) << endl;
+            cout << "2^4" << pow(2,4) << endl;
+            cout << "square root " << sqrt(64) << endl;
 
 
 

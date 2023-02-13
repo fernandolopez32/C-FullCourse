@@ -146,12 +146,53 @@ int main(){
 
 // math functions (NOW INCLUDING <CMATH>)
 
-            int  neg = -3000;
-            cout << abs(neg) << endl;
-            cout << "2^4" << pow(2,4) << endl;
-            cout << "square root " << sqrt(64) << endl;
+            // int  neg = -3000;
+            // cout << abs(neg) << endl;
+            // cout << "2^4" << pow(2,4) << endl;
+            // cout << "square root " << sqrt(64) << endl;
 
 
+// switch statements 
+
+
+            const int pen = 1;
+            const int marker = 2;
+            const int eraser = 3;
+            const int rectange = 4;
+            const int circle = 5;
+
+            int tool = pen;
+            switch (tool)
+            {
+                case pen: 
+                {
+                    cout << "active tool is pen" << endl; 
+                }
+                    break;
+                case marker: 
+                {
+                    cout << "active tool is marker" << endl;
+                }
+                    break;
+                case eraser: 
+                {
+                    cout << "active tool is erase" << endl;
+                }
+                    break;
+                case rectange:
+                 {
+                    cout << "active tool is rectangle" << endl; 
+                }
+                case circle: 
+                {
+                    cout << "active tool is circle" << endl; 
+                }
+                    break;
+                default: 
+                {
+                    cout << "NO TOOL FOUND" << endl;
+                }
+            }
 
 
 

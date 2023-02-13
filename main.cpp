@@ -195,6 +195,17 @@ int main(){
             }
 
 
+// ternary operators 
+
+int max; 
+
+int a = 25;
+int b = 50;
+
+max = (a > b) ? a : b;
+
+cout<< "max is: "<< max << endl;
+
 
 
 

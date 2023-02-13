@@ -155,56 +155,72 @@ int main(){
 // switch statements 
 
 
-            const int pen = 1;
-            const int marker = 2;
-            const int eraser = 3;
-            const int rectange = 4;
-            const int circle = 5;
+            // const int pen = 1;
+            // const int marker = 2;
+            // const int eraser = 3;
+            // const int rectange = 4;
+            // const int circle = 5;
 
-            int tool = pen;
-            switch (tool)
-            {
-                case pen: 
-                {
-                    cout << "active tool is pen" << endl; 
-                }
-                    break;
-                case marker: 
-                {
-                    cout << "active tool is marker" << endl;
-                }
-                    break;
-                case eraser: 
-                {
-                    cout << "active tool is erase" << endl;
-                }
-                    break;
-                case rectange:
-                 {
-                    cout << "active tool is rectangle" << endl; 
-                }
-                case circle: 
-                {
-                    cout << "active tool is circle" << endl; 
-                }
-                    break;
-                default: 
-                {
-                    cout << "NO TOOL FOUND" << endl;
-                }
-            }
+            // int tool = pen;
+            // switch (tool)
+            // {
+            //     case pen: 
+            //     {
+            //         cout << "active tool is pen" << endl; 
+            //     }
+            //         break;
+            //     case marker: 
+            //     {
+            //         cout << "active tool is marker" << endl;
+            //     }
+            //         break;
+            //     case eraser: 
+            //     {
+            //         cout << "active tool is erase" << endl;
+            //     }
+            //         break;
+            //     case rectange:
+            //      {
+            //         cout << "active tool is rectangle" << endl; 
+            //     }
+            //     case circle: 
+            //     {
+            //         cout << "active tool is circle" << endl; 
+            //     }
+            //         break;
+            //     default: 
+            //     {
+            //         cout << "NO TOOL FOUND" << endl;
+            //     }
+            // }
 
 
 // ternary operators 
 
-int max; 
+            // int max; 
+            // // types must be of the same type or convertible 
+            // int a = 25;
+            // int b = 50;
 
-int a = 25;
-int b = 50;
+            // max = (a > b) ? a : b;
 
-max = (a > b) ? a : b;
+            // cout<< "max is: "<< max << endl;
 
-cout<< "max is: "<< max << endl;
+
+// starting arrays lecture 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

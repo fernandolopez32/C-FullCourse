@@ -209,9 +209,29 @@ int main(){
 
 // starting arrays lecture 
 
+        // to declare an array you must specify the array type, give it a name and specify the size
+            int scores [10];// an array storing 10 integers 
+
+// asigning values 
+
+            scores[0] = 10;
+            scores[1] =20;
+            scores[2] =30;
+
+            cout << "scores [0]" << scores[0] << endl;
 
 
+// looping through the array 
 
+            for ( size_t i = {0}; i < 10; i++){
+                cout << "scores[" << i << "] :" << scores[i] << endl;
+            }
+
+// declaring and putting data into an array at the same time 
+
+            double salaries[5] = {29.2, 23.5, 48.2, 10.4, 12.5};
+
+            cout << salaries[0]<< endl;
 
 
 

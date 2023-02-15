@@ -232,7 +232,17 @@ int main(){
             double salaries[5] = {29.2, 23.5, 48.2, 10.4, 12.5};
 
             cout << salaries[0]<< endl;
+            for(size_t i = {0}; i < 5; i++){
+                cout<<"salary["<<i<<"]: "<< salaries[i] << endl;
+            }
 
+// omit size of an arry 
+
+            int class_sizes[] = {10, 23, 12, 15,11,15,17,18};
+
+            for(int value :class_sizes){
+                cout << "value: " << value << endl;
+            }
 
 
 

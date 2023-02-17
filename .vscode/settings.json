@@ -13,7 +13,7 @@
         "[JetBrains Darcula Theme]": {
           "textMateRules": [
             {
-              "scope": ["source.python"],
+              "scope": ["source.cpp"],
               "settings": {
                 "foreground": "#e06c75"
               }

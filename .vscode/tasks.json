@@ -2,9 +2,10 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "cppbuild",
-			"label": "Build with GCC 14.0.0",
-			"command": "/usr/bin/g++",
+			
+			"label": "Build with G++",
+			"type": "shell",
+			"command": "g++",
 			"args": [
 				"-g",
 				"-std=c++17",

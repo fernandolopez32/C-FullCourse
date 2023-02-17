@@ -21,6 +21,11 @@ If you are reading you need to know the comment structure--->
 
 #include <cmath>
 
+#include <array>
+
+#include <iterator>
+
+
 
 using namespace std;
 
@@ -244,15 +249,21 @@ int main(){
             //     cout << "value: " << value << endl;
             // }
 
+            // int scores [10];
+
+            // cout <<"scores at [0]"<< scores[0] << endl;
+
+            // for(auto element: scores){
+            //     cout<< element*10 << endl;
+            // }
+// querry for the size of an array 
+
             int scores [10];
 
-            cout <<"scores at [0]"<< scores[0] << endl;
-
-            for(auto element: scores){
-                cout<< element << endl;
-            }
+            cout<< "scores size: " <<   std::size(scores) << endl;
 
 
+            // cout << "scores size: " << sizeof(scores) / sizeof(scores[0]) << endl;
 
 
 

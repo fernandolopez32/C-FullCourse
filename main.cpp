@@ -244,7 +244,10 @@ int main(){
             //     cout << "value: " << value << endl;
             // }
 
+            int scores [10];
 
+            cout << scores[0] << endl;
+            
 
 
 

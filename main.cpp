@@ -248,7 +248,9 @@ int main(){
 
             cout <<"scores at [0]"<< scores[0] << endl;
 
-
+            for(auto element: scores){
+                cout<< element << endl;
+            }
 
 
 

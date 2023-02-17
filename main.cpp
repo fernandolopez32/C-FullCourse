@@ -246,8 +246,8 @@ int main(){
 
             int scores [10];
 
-            cout << scores[0] << endl;
-            
+            cout <<"scores at [0]"<< scores[0] << endl;
+
 
 
 

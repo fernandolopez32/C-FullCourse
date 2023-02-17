@@ -1,5 +1,25 @@
 {
     "files.associations": {
         "iostream": "cpp"
-    }
+    },
+
+    "workbench.colorCustomizations": {
+        "tab.activeBackground": "#282c34",
+        "activityBar.background": "#282c34",
+        "sideBar.background": "#282c34"
+      },
+
+      "editor.tokenColorCustomizations": {
+        "[JetBrains Darcula Theme]": {
+          "textMateRules": [
+            {
+              "scope": ["source.python"],
+              "settings": {
+                "foreground": "#e06c75"
+              }
+            }
+          ]
+        }
+      }
+
 }

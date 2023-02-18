@@ -258,11 +258,16 @@ int main(){
             // }
 // querry for the size of an array 
 
-            int scores [10];
+            int scores [] {1,2,3,4,5,6,7,8,9,10};
+
+            int count { size(scores)};
+
+            for(size_t i{0}; i < count ; ++i){
+                cout<<"scores[" << i << "]" << scores[i] << endl;
+            }
+
 
             cout<< "scores size: " <<   std::size(scores) << endl;
-
-
             // cout << "scores size: " << sizeof(scores) / sizeof(scores[0]) << endl;
 
 

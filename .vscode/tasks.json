@@ -1,26 +1,45 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			
-			"label": "Build with G++",
-			"type": "shell",
-			"command": "g++",
-			"args": [
-				"-g",
-				"-std=c++17",
-				"${workspaceFolder}/*.cpp",
-				"-o",
-				"${fileDirname}\\oreo.exe"
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": "build",
-			"detail": "compiler: /usr/bin/g++"
-		}
-	]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build G++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "main.cpp",
+                "-o",
+                "oreo.exe"
+            ]
+        }
+    ]
 }
+
+
+
+// {
+// 	"version": "2.0.0",
+// 	"tasks": [
+// 		{
+			
+// 			"label": "Build with G++",
+// 			"type": "shell",
+// 			"command": "g++",
+// 			"args": [
+// 				"-g",
+// 				"-std=c++17",
+// 				"main.cpp",
+// 				"-o",
+// 				"oreo.exe"
+// 			],
+// 			"options": {
+// 				"cwd": "${fileDirname}"
+// 			},
+// 			"problemMatcher": [
+// 				"$gcc"
+// 			],
+// 			"group": "build",
+// 			"detail": "compiler: /usr/bin/g++"
+// 		}
+// 	]
+// }

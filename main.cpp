@@ -243,37 +243,75 @@ int main(){
 
 // omit size of an arry 
 
-            // int class_sizes[] = {10, 23, 12, 15,11,15,17,18};
+                //     int class_sizes[] = {10, 23, 12, 15,11,15,17,18};
 
-            // for(int value :class_sizes){
-            //     cout << "value: " << value << endl;
-            // }
+                //     for(int value :class_sizes){
+                //         cout << "value: " << value << endl;
+                //     }
 
-            // int scores [10];
+                //     int scores [10];
 
-            // cout <<"scores at [0]"<< scores[0] << endl;
+                //     cout <<"scores at [0]"<< scores[0] << endl;
 
-            // for(auto element: scores){
-            //     cout<< element*10 << endl;
-            // }
+                //     for(auto element: scores){
+                //         cout<< element*10 << endl;
+                //     }
 // querry for the size of an array 
 
-            int scores [] {1,2,3,4,5,6,7,8,9,10};
+                // int scores [] {1,2,3,4,5,6,7,8,9,10};
 
-            int count { size(scores)};
+                // int count { size(scores)};
 
-            for(size_t i{0}; i < count ; ++i){
-                cout<<"scores[" << i << "]" << scores[i] << endl;
-            }
-
-
-            cout<< "scores size: " <<   std::size(scores) << endl;
-            // cout << "scores size: " << sizeof(scores) / sizeof(scores[0]) << endl;
+                // for(size_t i{0}; i < count ; ++i){
+                // cout<<"scores[" << i << "]" << scores[i] << endl;
+                // }
 
 
+                // cout<< "scores size: " <<   std::size(scores) << endl;
+                // // cout << "scores size: " << sizeof(scores) / sizeof(scores[0]) << endl;
+
+// char messeges 
+                // // needs a null termination character to know when to stop 
+                // char message1 []{'H','e','l','l','o','\0'};
+
+                // cout << "message1 : " << message1 << endl;
+                // cout << "size = " << size(message1)<< endl;
 
 
+// pointers in c++ 
 
+                //declaring pinters 
+                // pointers only store address to varaibles 
+                int * pInteger {}; // can only store an address of a variable of type int
+                cout << sizeof(pInteger)<<  " <----size of pionter // size of integer ----> " << sizeof(int) << endl;
+
+                double * pDouble{}; // can only store an address of a variable of type double
+                cout << sizeof(pDouble)<<  " <----size of pionter // size of double ----> " << sizeof(double) << endl;
+
+                // explicitely initilize to nullptr
+
+                // int * pInt {nullptr};
+
+                double * pDub{nullptr};
+
+                // initilizing pionter and assigning them data 
+
+                // pointers store addresses of variables 
+
+        int intVar {32};
+        int* pInt {&intVar};// The address of operator(&)
+        cout << "int var :" << intVar << endl;
+        cout<< "pInt (address in memory) :" << pInt << endl;
+
+        //you can also change the address stored in a pointer any time 
+        int intVar1 {57};
+        intVar1 = 124;
+
+        pInt = &intVar1; // assign a different address to the pointer 
+        cout << "pInt (with different address) :" << pInt << endl;
+
+
+ 
 
 
 

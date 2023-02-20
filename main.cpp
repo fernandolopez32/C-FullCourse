@@ -280,35 +280,63 @@ int main(){
 
 // pointers in c++ 
 
-                //declaring pinters 
-                // pointers only store address to varaibles 
-                int * pInteger {}; // can only store an address of a variable of type int
-                cout << sizeof(pInteger)<<  " <----size of pionter // size of integer ----> " << sizeof(int) << endl;
+                // //declaring pinters 
+                // // pointers only store address to varaibles 
+                // int * pInteger {}; // can only store an address of a variable of type int
+                // cout << sizeof(pInteger)<<  " <----size of pionter // size of integer ----> " << sizeof(int) << endl;
 
-                double * pDouble{}; // can only store an address of a variable of type double
-                cout << sizeof(pDouble)<<  " <----size of pionter // size of double ----> " << sizeof(double) << endl;
+                // double * pDouble{}; // can only store an address of a variable of type double
+                // cout << sizeof(pDouble)<<  " <----size of pionter // size of double ----> " << sizeof(double) << endl;
 
-                // explicitely initilize to nullptr
+                // // explicitely initilize to nullptr
 
-                // int * pInt {nullptr};
+                // // int * pInt {nullptr};
 
-                double * pDub{nullptr};
+                // double * pDub{nullptr};
 
                 // initilizing pionter and assigning them data 
 
                 // pointers store addresses of variables 
 
-        int intVar {32};
-        int* pInt {&intVar};// The address of operator(&)
-        cout << "int var :" << intVar << endl;
-        cout<< "pInt (address in memory) :" << pInt << endl;
+                // int intVar {32};
+                // int* pInt {&intVar};// The address of operator(&)
+                // cout << "int var :" << intVar << endl;
+                // cout<< "pInt (address in memory) :" << pInt << endl;
 
-        //you can also change the address stored in a pointer any time 
-        int intVar1 {57};
-        intVar1 = 124;
+                // //you can also change the address stored in a pointer any time 
+                // int intVar1 {57};
+                // intVar1 = 124;
 
-        pInt = &intVar1; // assign a different address to the pointer 
-        cout << "pInt (with different address) :" << pInt << endl;
+                // pInt = &intVar1; // assign a different address to the pointer 
+                // cout << "pInt (with different address) :" << pInt << endl;
+
+                // // dereferencing a pointer : 
+
+                // int* pInt2{nullptr};
+                // int intData{56};
+                // pInt2 = &intData;
+
+                // cout << "value : " <<  *pInt2 << endl; // reading something that is stored in the pointer 
+// declaring pointers to char
+                // can use normal pointers to char like any other data type
+                char* pChar {nullptr};
+                char charVar{'A'};
+
+                pChar = &charVar;
+
+                cout<< "the value stored in pChar is  : "<< *pChar << endl;
+
+                char charVar1 {'C'}; 
+                pChar = &charVar1;
+                
+                cout << "the value stored in pChar is : " << *pChar << endl;
+
+                char* pMessage {"Hello World"};
+                //printing out the array of characters
+                cout<< "the message is : " << pMessage << endl;
+                // when array of chars is dereferenced it prints out the first character of the array
+                cout << "The value stored at pMessage is : " << *pMessage << endl;
+
 
 
  
@@ -316,7 +344,10 @@ int main(){
 
 
 // write a application in the terminal to have a conversation with.
-           std:: string* userResp;
+        string* responsePtr{};
+        // string response = getline(cin,response);
+        // string  = &responsePtr;
+
 
             // do{
             //     std::cout << "Start..." << std::endl;

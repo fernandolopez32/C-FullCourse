@@ -319,23 +319,85 @@ int main(){
                 // cout << "value : " <<  *pInt2 << endl; // reading something that is stored in the pointer 
 // declaring pointers to char
                 // can use normal pointers to char like any other data type
-                char* pChar {nullptr};
-                char charVar{'A'};
+                // char* pChar {nullptr};
+                // char charVar{'A'};
 
-                pChar = &charVar;
+                // pChar = &charVar;
 
-                cout<< "the value stored in pChar is  : "<< *pChar << endl;
+                // cout<< "the value stored in pChar is  : "<< *pChar << endl;
 
-                char charVar1 {'C'}; 
-                pChar = &charVar1;
+                // char charVar1 {'C'}; 
+                // pChar = &charVar1;
                 
-                cout << "the value stored in pChar is : " << *pChar << endl;
+                // cout << "the value stored in pChar is : " << *pChar << endl;
 
-                char* pMessage {"Hello World"};
-                //printing out the array of characters
-                cout<< "the message is : " << pMessage << endl;
-                // when array of chars is dereferenced it prints out the first character of the array
-                cout << "The value stored at pMessage is : " << *pMessage << endl;
+                // char* pMessage { "Hello World" };
+                // //printing out the array of characters
+                // cout<< "the message is : " << pMessage << endl;
+                // // when array of chars is dereferenced it prints out the first character of the array
+                // cout << "The value stored at pMessage is : " << *pMessage << endl;
+
+// memory map 
+// system
+// stack stores local variables 
+// heap stores additional memory that can be queried for at run time 
+// data
+// text is the program in bionary 
+
+// dynamic memory allocation 
+
+                // int* pNumber4{};
+
+                // pNumber4 = new int;
+
+                // *pNumber4 = 77; // writing into dynamically allocate memory  
+
+                // cout << "Dynamically allocating memory : " << pNumber4 << endl;
+                // cout<< "*pNumber4 : " << *pNumber4 << endl;
+
+
+// cstring lib 
+
+
+                // strlen :Find the length of a strig
+                const char message1 []{"the sky is blue."};
+                
+                // array decays into pointer whe we use const char*
+                const char* message2 {"The sky is blue."};
+                cout << "message 1 : " << message1 << endl;
+
+                //strlen inores null character 
+                cout << "strlen(message1) : " << strlen(message1) << endl;
+
+                // Includes the null character 
+                cout<< "sizeof(message1) : " << sizeof(message1) << endl;
+
+                // strlen still works with decayed arrays 
+                cout<< "strlen(message2) : " << strlen(message2) << endl;
+
+
+                // prints size of pointer 
+                cout << "sizeof(message2) : " << sizeof(message2) << endl;
+
+
+                //strcmp signature : int strcmp( const char *Lhs, const char *Rhs);
+                //strcmp signature : int strcmp( const char *Lhs, const char *Rhs, size_t count n);
+                // returns negative value if 1hs appers before rhs in lexicographical order, 
+                // zero if Lhs and Rhs compare equal
+                // and positive value if Lhs appears after Rhs in lexicographical order
+        
+                const char* stringData1 {"Alabama"};
+                const char* stringData2 {"Blabama"}; 
+                cout << "strcmp ( " << stringData1 << "," << stringData2 << ") : " << strcmp(stringData1, stringData2) << endl;
+                
+                stringData1 = "aaarlo"; 
+                stringData2 = "aaamerica";
+
+                size_t n{3};
+                cout << "strcmp ( " << stringData1 << "," << stringData2 << "," <<  n << " ) : " << strncmp(stringData1, stringData2, n) << endl; 
+        
+
+
 
 
 

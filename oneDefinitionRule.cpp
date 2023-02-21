@@ -29,7 +29,7 @@ int main(){
     // Point p1; 
     // cout<< "p1.x : " << p1.m_x << " , p1.y : " << p1.m_y << endl;
 
-    Person p1 ("John Snow" , 35);
+    Person p1 (35, "John Snow");
     p1.print_info();
 
     return 0; 

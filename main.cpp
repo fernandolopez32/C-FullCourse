@@ -16,26 +16,27 @@ If you are reading you need to know the comment structure--->
 #include <iostream>
 // loading libs that we can use for example function to print out hello world
 #include <string>
+#include <cstring>
 
-#include <string_view>
+// #include <string_view>
 
-#include <cmath>
+// #include <cmath>
 
-#include <array>
+// #include <array>
 
-#include <iterator>
+// #include <iterator>
 
 
 
-using namespace std;
+// using namespace std;
 
-double addingDecimals(double first, double second){
-        return first + second;
-    }
+// double addingDecimals(double first, double second){
+//         return first + second;
+//     }
 
 // main function starting point of the c++ program
 // code is executed in order top to bottom 
-int main(){
+// int main(){
 
 // endl is used to go to the next line in the terminal 
             // std:: cout << "Hello World!" << std:: endl;
@@ -398,28 +399,28 @@ int main(){
         
                 // find the first occurrence of a character 
 
-                const char* str {" Try not. Do, or do not. There is no try?"};
-                char target = '?';
-                const char* result = str;
-                int iterations{};
+                // const char* str {" Try not. Do, or do not. There is no try?"};
+                // char target = '?';
+                // const char* result = str;
+                // int iterations{};
 
-                while ((result = strchr(result, target)) != nullptr){
-                        cout<< "Found "<< target << " starting at " << result << "'\n";
+                // while ((result = strchr(result, target)) != nullptr){
+                //         cout<< "Found "<< target << " starting at " << result << "'\n";
 
-                // increment result, otherwise well find target at the same location 
-                ++result;
-                ++iterations;
+                // // increment result, otherwise well find target at the same location 
+                // ++result;
+                // ++iterations;
 
-                }
-                cout << "iterations " << iterations << endl;
+                // }
+                // cout << "iterations " << iterations << endl;
 
-                // find last occurence 
+                // // find last occurence 
 
-                char input [] = "/home/user/hello.cpp"; 
-                char* output = strrchr(input,'/');
-                if(output){
-                        cout << output+1 << endl; // +1 because we want to start printing past the character found by strrchr()
-                }
+                // char input [] = "/home/user/hello.cpp"; 
+                // char* output = strrchr(input,'/');
+                // if(output){
+                //         cout << output+1 << endl; // +1 because we want to start printing past the character found by strrchr()
+                // }
                 
                         
 
@@ -431,7 +432,7 @@ int main(){
 
 
 // write a application in the terminal to have a conversation with.
-        string* responsePtr{};
+        // string* responsePtr{};
         // string response = getline(cin,response);
         // string  = &responsePtr;
 
@@ -473,5 +474,5 @@ int main(){
 
 
 // sometimes used to see if the whole program ran correctly
-   return 0; 
-}
+//    return 0; 
+// }

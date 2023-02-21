@@ -1,18 +1,19 @@
 {
     "version": "2.0.0",
     "tasks": [
-        {
-            "label": "build G++",
-            "type": "shell",
-            "command": "g++",
-            "args": [
-                "-std=c++17",
-                "${workspaceFolder}/*.cpp",
-                "-o",
-                "oreo.exe"
-            ]
-        }
-    ]
+		{
+			"label": "build G++",
+			"type": "shell",
+			"command": "g++",
+			"args": [
+				"-std=c++17",
+				"${workspaceFolder}/*.cpp",
+				"-o",
+				"oreo.exe"
+			],
+			"problemMatcher": []
+		}
+	]
 }
 
 

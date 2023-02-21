@@ -359,25 +359,25 @@ int main(){
 // cstring lib 
 
 
-                // strlen :Find the length of a strig
-                const char message1 []{"the sky is blue."};
+                // // strlen :Find the length of a strig
+                // const char message1 []{"the sky is blue."};
                 
-                // array decays into pointer whe we use const char*
-                const char* message2 {"The sky is blue."};
-                cout << "message 1 : " << message1 << endl;
+                // // array decays into pointer whe we use const char*
+                // const char* message2 {"The sky is blue."};
+                // cout << "message 1 : " << message1 << endl;
 
-                //strlen inores null character 
-                cout << "strlen(message1) : " << strlen(message1) << endl;
+                // //strlen inores null character 
+                // cout << "strlen(message1) : " << strlen(message1) << endl;
 
-                // Includes the null character 
-                cout<< "sizeof(message1) : " << sizeof(message1) << endl;
+                // // Includes the null character 
+                // cout<< "sizeof(message1) : " << sizeof(message1) << endl;
 
-                // strlen still works with decayed arrays 
-                cout<< "strlen(message2) : " << strlen(message2) << endl;
+                // // strlen still works with decayed arrays 
+                // cout<< "strlen(message2) : " << strlen(message2) << endl;
 
 
-                // prints size of pointer 
-                cout << "sizeof(message2) : " << sizeof(message2) << endl;
+                // // prints size of pointer 
+                // cout << "sizeof(message2) : " << sizeof(message2) << endl;
 
 
                 //strcmp signature : int strcmp( const char *Lhs, const char *Rhs);
@@ -386,17 +386,42 @@ int main(){
                 // zero if Lhs and Rhs compare equal
                 // and positive value if Lhs appears after Rhs in lexicographical order
         
-                const char* stringData1 {"Alabama"};
-                const char* stringData2 {"Blabama"}; 
-                cout << "strcmp ( " << stringData1 << "," << stringData2 << ") : " << strcmp(stringData1, stringData2) << endl;
+                // const char* stringData1 {"Alabama"};
+                // const char* stringData2 {"Blabama"}; 
+                // cout << "strcmp ( " << stringData1 << "," << stringData2 << ") : " << strcmp(stringData1, stringData2) << endl;
                 
-                stringData1 = "aaarlo"; 
-                stringData2 = "aaamerica";
+                // stringData1 = "aaarlo"; 
+                // stringData2 = "aaamerica";
 
-                size_t n{3};
-                cout << "strcmp ( " << stringData1 << "," << stringData2 << "," <<  n << " ) : " << strncmp(stringData1, stringData2, n) << endl; 
+                // size_t n{3};
+                // cout << "strcmp ( " << stringData1 << "," << stringData2 << "," <<  n << " ) : " << strncmp(stringData1, stringData2, n) << endl; 
         
+                // find the first occurrence of a character 
 
+                const char* str {" Try not. Do, or do not. There is no try?"};
+                char target = '?';
+                const char* result = str;
+                int iterations{};
+
+                while ((result = strchr(result, target)) != nullptr){
+                        cout<< "Found "<< target << " starting at " << result << "'\n";
+
+                // increment result, otherwise well find target at the same location 
+                ++result;
+                ++iterations;
+
+                }
+                cout << "iterations " << iterations << endl;
+
+                // find last occurence 
+
+                char input [] = "/home/user/hello.cpp"; 
+                char* output = strrchr(input,'/');
+                if(output){
+                        cout << output+1 << endl; // +1 because we want to start printing past the character found by strrchr()
+                }
+                
+                        
 
 
 

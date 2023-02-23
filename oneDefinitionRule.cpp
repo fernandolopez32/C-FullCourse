@@ -29,6 +29,7 @@ int main(){
     // Point p1; 
     // cout<< "p1.x : " << p1.m_x << " , p1.y : " << p1.m_y << endl;
 
+    // we can create more people but only define what a person is one time
     Person p1 (35, "John Snow");
     p1.print_info();
 
